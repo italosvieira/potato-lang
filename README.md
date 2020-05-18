@@ -10,4 +10,4 @@
 
 # Backlog
 * [x] Exemplo de task do backlog concluída
-* [] Exemplo de task do backlog para fazer
+* [ ] Exemplo de task do backlog para fazer
