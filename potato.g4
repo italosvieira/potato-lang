@@ -270,6 +270,14 @@ simpleStatement
 
 assignmentStatement
    : variable ASSIGN expression
+   | variable assignWithbasicOperators (variable | unsignedNumber)?
+   ;
+
+assignWithbasicOperators
+   : PLUSASSIGN
+   | MINUSASSIGN
+   | STARASSIGN
+   | SLASHASSIGN
    ;
 
 variable
@@ -918,6 +926,26 @@ RCURLY
 
 QUESTIONMARK
    : '?'
+   ;
+
+
+PLUSASSIGN
+   : '+:='
+   ;
+
+
+MINUSASSIGN
+   : '-:='
+   ;
+
+
+STARASSIGN
+   : '*:='
+   ;
+
+
+SLASHASSIGN
+   : '/:='
    ;
 
 

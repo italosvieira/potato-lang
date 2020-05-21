@@ -9,5 +9,9 @@
 * Caso apenas queira rodar os testes sem reinstalar as dependências basta rodar o comando `mvn test` ou executar o script `test.sh` que se encontra na pasta raíz do projeto.
 
 # Backlog
-* [x] Adicionar operador ternário.
+* [x] Adicionar operador ternário. Commit: 32af602ae4b3b3e04f41925624c18aac5f4d1a1c. Arquivo de teste: ternaryOperator.pot
+* [x] Adicionar atribuição de variável com operador de soma. Commit: . Arquivo de teste: ternaryOperator.pot.    
+* [x] Adicionar atribuição de variável com operador de subtração. Commit: . Arquivo de teste: ternaryOperator.pot.
+* [x] Adicionar atribuição de variável com operador de multiplicação. Commit: . Arquivo de teste: ternaryOperator.pot.
+* [x] Adicionar atribuição de variável com operador de divisão. Commit: . Arquivo de teste: ternaryOperator.pot.
 * [ ] Adicionar tipo enum.

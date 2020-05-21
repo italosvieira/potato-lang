@@ -1,0 +1,11 @@
+program ternaryOperator(input, output);
+
+(* **************************    main      ********************************** *)
+
+var var1: integer;
+var var2: integer;
+
+begin
+  var1 +:= 10;
+  var2 +:= var1;
+end.
