@@ -3,30 +3,31 @@ program jsonMain(input, output);
 (* **************************    main      ********************************** *)
 
 const
-  grades = §
-               'glossary': §
-                   'title': 'example glossary',
-           		'GlossDiv': §
-                       'title': 'S',
-           			'GlossList': §
-                           'GlossEntry': §
-                               'ID': 'SGML',
-           					'SortAs': 'SGML',
-           					'GlossTerm': 'Standard Generalized Markup Language',
-           					'Acronym': 'SGML',
-           					'Abbrev': 'ISO 8879:1986',
-           					'GlossDef': §
-                                   'para': 'A meta-markup language, used to create markup languages such as DocBook.',
-           						'GlossSeeAlso': ['GML', 'XML']
-                               §,
-           					'GlossSee': 'markup'
-                           §
-                       §
-                   §
-               §
-           §;
+  constJson =
+    (
+        'glossary': (
+            'title': 'example glossary',
+            'GlossDiv': (
+                'title': 'S',
+                'GlossList': (
+                    'GlossEntry': (
+                        'ID': 'SGML',
+                        'SortAs': 'SGML',
+                        'GlossTerm': 'Standard Generalized Markup Language',
+                        'Acronym': 'SGML',
+                        'Abbrev': 'ISO 8879:1986',
+                        'GlossDef': (
+                            'para': 'A meta-markup language, used to create markup languages such as DocBook.',
+                            'GlossSeeAlso': ['GML', 'XML']
+                        ),
+                        'GlossSee': 'markup'
+                    )
+                )
+            )
+        )
+    );
 
-var batata: json;
+var varJson: json;
 
 begin
  write('Hello World.');

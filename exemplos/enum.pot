@@ -1,0 +1,12 @@
+program enumMain(input, output);
+
+(* **************************    main      ********************************** *)
+
+var varEnum: enum;
+
+const
+  constEnum = (value1 = 10, value2 = '', value3);
+
+begin
+ write('Hello World.');
+end.

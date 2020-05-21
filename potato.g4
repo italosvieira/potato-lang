@@ -49,6 +49,7 @@ constant
    | string
    | constantChr
    | json
+   | enumerated
    ;
 
 unsignedNumber
@@ -98,7 +99,6 @@ type
    : simpleType
    | structuredType
    | pointerType
-   | json
    ;
 
 simpleType
@@ -118,7 +118,7 @@ subrangeType
 
 typeIdentifier
    : identifier
-   | (CHAR | BOOLEAN | INTEGER | REAL | STRING | JSON)
+   | (CHAR | BOOLEAN | INTEGER | REAL | STRING | JSON | ENUM)
    ;
 
 structuredType
@@ -465,13 +465,21 @@ recordVariableList
    : variable (COMMA variable)*
    ;
 
+enumerated
+   : LPAREN enumeratedValue RPAREN
+   ;
+
+enumeratedValue
+    : identifier (: EQUAL (STRING_LITERAL | NUM_INT))? (: COMMA enumeratedValue)?
+    ;
+
 json
    : value
    ;
 
 obj
-   : JSON_TOKEN pair (COMMA pair)* JSON_TOKEN
-   | JSON_TOKEN JSON_TOKEN
+   : LPAREN pair (COMMA pair)* RPAREN
+   | LPAREN RPAREN
    ;
 
 pair
@@ -650,6 +658,11 @@ fragment Z
 
 JSON_TOKEN
    : '§'
+   ;
+
+
+ENUM
+   : E N U M
    ;
 
 
