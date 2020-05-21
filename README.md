@@ -14,4 +14,6 @@
 * [x] Adicionar atribuição de variável com operador de subtração. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: minusAssign.pot.
 * [x] Adicionar atribuição de variável com operador de multiplicação. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: multiplyAssign.pot.
 * [x] Adicionar atribuição de variável com operador de divisão. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: divideAssign.pot.
+* [x] Adicionar suporte a estrutura de dados JSON para variáveis do tipo const. Commit: cdc62edb45a04bb377fe28e28524c325e1aa05c4. Arquivo de teste: json.pot.
+* [x] Adicionar suporte a estrutura de dados JSON para variáveis do tipo var. Commit: 11e64aac88947e8256ae6e8deff1f6c579b1abb9. Arquivo de teste: json.pot.
 * [ ] Adicionar tipo enum.
