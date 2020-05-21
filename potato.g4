@@ -414,7 +414,7 @@ ifStatement
    ;
 
 ternaryStatement
-   : IF expression QUESTIONMARK statement (: COLON statement)?
+   : IF expression QUESTIONMARK statement COLON statement SEMI
    ;
 
 caseStatement

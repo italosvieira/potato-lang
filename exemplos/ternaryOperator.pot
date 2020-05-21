@@ -3,6 +3,10 @@ program ternaryOperator(input, output);
 (* **************************    main      ********************************** *)
 
 begin
-  if 1 < 5 ? writeln('The array before call to adder:') : writeln('The array before call to adder:');
-  if 5 > 1 ? writeln('The array before call to adder:') : writeln('The array before call to adder:');
+  begin
+    if 1 < 5 ? writeln('The array before call to adder:') : writeln('The array before call to adder:');
+  end;
+  begin
+    if 5 > 1 ? writeln('The array before call to adder:') : writeln('The array before call to adder:');
+  end;
 end.
