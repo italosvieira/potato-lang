@@ -50,6 +50,7 @@ constant
    | constantChr
    | json
    | enumerated
+   | anonymousFunction
    ;
 
 unsignedNumber
@@ -118,7 +119,7 @@ subrangeType
 
 typeIdentifier
    : identifier
-   | (CHAR | BOOLEAN | INTEGER | REAL | STRING | JSON | ENUM)
+   | (CHAR | BOOLEAN | INTEGER | REAL | STRING | JSON | ENUM | FUNC)
    ;
 
 structuredType
@@ -288,6 +289,9 @@ variable
 
 expression
    : simpleExpression (relationaloperator expression)?
+   | json
+   | enumerated
+   | anonymousFunction
    ;
 
 relationaloperator
@@ -463,6 +467,14 @@ withStatement
 
 recordVariableList
    : variable (COMMA variable)*
+   ;
+
+formalParameterListAnonymousFunction
+   : LPAREN (formalParameterSection)? (SEMI formalParameterSection)* RPAREN
+   ;
+
+anonymousFunction
+   : formalParameterListAnonymousFunction ARROW LPAREN block RPAREN
    ;
 
 enumerated
@@ -658,6 +670,11 @@ fragment Z
 
 JSON_TOKEN
    : '§'
+   ;
+
+
+FUNC
+   : F U N C
    ;
 
 
@@ -865,6 +882,9 @@ WHILE
    : W H I L E
    ;
 
+ARROW
+   : '->'
+   ;
 
 WITH
    : W I T H

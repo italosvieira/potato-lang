@@ -1,0 +1,25 @@
+program anonymousFunction(input, output);
+
+(* **************************    main      ********************************** *)
+
+var varAnoFunc: func;
+
+const
+  ano = (message: String) -> (
+    const anoConstInt = 10;
+    var anoInt: integer;
+    begin
+      anoInt := 10;
+    end
+  );
+
+begin
+ varAnoFunc := (message: String; value: integer) -> (
+   var anoInt: integer;
+   const anotherAnoFunc = () -> (begin end);
+   begin
+    anoInt := 10;
+   end
+ );
+ write('Hello World.');
+end.
