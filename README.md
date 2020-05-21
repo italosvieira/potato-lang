@@ -21,3 +21,4 @@
 * [x] Adicionar suporte a estrutura de dados JSON para variáveis do tipo var. Arquivo de teste -> json.pot
 * [x] Adicionar suporte a estrutura de dados ENUM para variáveis do tipo const. Arquivo de teste -> enum.pot
 * [x] Adicionar suporte a estrutura de dados ENUM para variáveis do tipo var. Arquivo de teste -> enum.pot
+* [x] Adicionar suporte a declaração de funções anônimas e atribuição a const e var. Arquivo de teste -> anonymousFunction.pot
