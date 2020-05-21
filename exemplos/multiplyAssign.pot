@@ -1,4 +1,4 @@
-program ternaryOperator(input, output);
+program multiplyAssign(input, output);
 
 (* **************************    main      ********************************** *)
 
