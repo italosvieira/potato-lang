@@ -48,6 +48,7 @@ constant
    | sign identifier
    | string
    | constantChr
+   | json
    ;
 
 unsignedNumber
@@ -463,6 +464,58 @@ recordVariableList
    : variable (COMMA variable)*
    ;
 
+json
+   : value
+   ;
+
+obj
+   : JSON pair (COMMA pair)* JSON
+   | JSON JSON
+   ;
+
+pair
+   : STRING_LITERAL COLON value
+   ;
+
+arr
+   : LBRACK value (COMMA value)* RBRACK
+   | LBRACK RBRACK
+   ;
+
+value
+   : STRING_LITERAL
+   | NUM_INT
+   | NUM_REAL
+   | obj
+   | arr
+   | NIL
+   ;
+
+
+fragment ESC
+   : '\\' (["\\/bfnrt] | UNICODE)
+   ;
+
+
+fragment UNICODE
+   : 'u' HEX HEX HEX HEX
+   ;
+
+
+fragment HEX
+   : [0-9a-fA-F]
+   ;
+
+
+fragment INT
+   : '0' | [1-9] [0-9]*
+   ;
+
+
+fragment EXP
+   : [Ee] [+\-]? INT
+   ;
+
 
 fragment A
    : ('a' | 'A')
@@ -591,6 +644,11 @@ fragment Y
 
 fragment Z
    : ('z' | 'Z')
+   ;
+
+
+JSON
+   : '§'
    ;
 
 
