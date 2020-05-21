@@ -9,7 +9,7 @@
 * Caso apenas queira rodar os testes sem reinstalar as dependências basta rodar o comando `mvn test` ou executar o script `test.sh` que se encontra na pasta raíz do projeto.
 
 ## Notas
-* JSON: Pascal utiliza {} para comentários e '' poara strings. Logo o suporte a json é feito com § no lugar de {} e '' no lugar de "".
+* JSON: Pascal utiliza {} para comentários e \' \' para strings. Logo o suporte a json é feito com § no lugar de {} e \' \' no lugar de "".
 
 
 ## Backlog
