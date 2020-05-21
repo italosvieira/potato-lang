@@ -1,4 +1,4 @@
-program json(input, output);
+program jsonMain(input, output);
 
 (* **************************    main      ********************************** *)
 
@@ -25,6 +25,8 @@ const
                    §
                §
            §;
+
+var batata: json;
 
 begin
  write('Hello World.');

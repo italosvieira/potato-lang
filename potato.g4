@@ -98,6 +98,7 @@ type
    : simpleType
    | structuredType
    | pointerType
+   | json
    ;
 
 simpleType
@@ -117,7 +118,7 @@ subrangeType
 
 typeIdentifier
    : identifier
-   | (CHAR | BOOLEAN | INTEGER | REAL | STRING)
+   | (CHAR | BOOLEAN | INTEGER | REAL | STRING | JSON)
    ;
 
 structuredType
@@ -469,8 +470,8 @@ json
    ;
 
 obj
-   : JSON pair (COMMA pair)* JSON
-   | JSON JSON
+   : JSON_TOKEN pair (COMMA pair)* JSON_TOKEN
+   | JSON_TOKEN JSON_TOKEN
    ;
 
 pair
@@ -647,8 +648,13 @@ fragment Z
    ;
 
 
-JSON
+JSON_TOKEN
    : '§'
+   ;
+
+
+JSON
+   : J S O N
    ;
 
 
