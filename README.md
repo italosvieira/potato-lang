@@ -10,8 +10,8 @@
 
 # Backlog
 * [x] Adicionar operador ternário. Commit: 32af602ae4b3b3e04f41925624c18aac5f4d1a1c. Arquivo de teste: ternaryOperator.pot
-* [x] Adicionar atribuição de variável com operador de soma. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: ternaryOperator.pot.    
-* [x] Adicionar atribuição de variável com operador de subtração. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: ternaryOperator.pot.
-* [x] Adicionar atribuição de variável com operador de multiplicação. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: ternaryOperator.pot.
-* [x] Adicionar atribuição de variável com operador de divisão. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: ternaryOperator.pot.
+* [x] Adicionar atribuição de variável com operador de soma. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: sumAssign.pot.    
+* [x] Adicionar atribuição de variável com operador de subtração. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: minusAssign.pot.
+* [x] Adicionar atribuição de variável com operador de multiplicação. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: multiplyAssign.pot.
+* [x] Adicionar atribuição de variável com operador de divisão. Commit: 45d92a58a5f3acf2002cfa01605d42b5921b4ad4. Arquivo de teste: divideAssign.pot.
 * [ ] Adicionar tipo enum.
