@@ -9,5 +9,5 @@
 * Caso apenas queira rodar os testes sem reinstalar as dependências basta rodar o comando `mvn test` ou executar o script `test.sh` que se encontra na pasta raíz do projeto.
 
 # Backlog
-* [x] Exemplo de task do backlog concluída
-* [ ] Exemplo de task do backlog para fazer
+* [x] Adicionar operador ternário.
+* [ ] Adicionar tipo enum.

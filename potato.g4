@@ -398,10 +398,15 @@ statements
 conditionalStatement
    : ifStatement
    | caseStatement
+   | ternaryStatement
    ;
 
 ifStatement
    : IF expression THEN statement (: ELSE statement)?
+   ;
+
+ternaryStatement
+   : IF expression QUESTIONMARK statement (: COLON statement)?
    ;
 
 caseStatement
@@ -908,6 +913,11 @@ LCURLY
 
 RCURLY
    : '}'
+   ;
+
+
+QUESTIONMARK
+   : '?'
    ;
 
 
