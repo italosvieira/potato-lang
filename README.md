@@ -1,9 +1,9 @@
 # Trabalho de compiladores utilizando ANTLR
 
 Integrantes do grupo:
-Italo Vieira
-Tarik Lopes
-Thabata Almeida
+*Italo Vieira
+*Tarik Lopes
+*Thabata Almeida
 
 
 * Linguagem Pascal utilizada como base.
